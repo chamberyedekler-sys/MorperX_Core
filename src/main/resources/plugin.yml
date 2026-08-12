@@ -1,14 +1,17 @@
 name: MorperX_Core
-version: 1.1.0
+version: 1.2.0
 main: me.morperx.core.MorperXCore
-api-version: '26.1'
+api-version: '1.21'
+
 author: MorperX
-description: MorperX sunucu temel sistemleri
+description: MorperX Minecraft Server Core
 
 commands:
+
+  sunucu:
+    description: Sunucu seçim menüsünü açar.
+    usage: /sunucu
+
   mod:
-    description: MorperX oyun modu seçme menüsünü açar.
+    description: Oyun modu seçim menüsünü açar.
     usage: /mod
-    aliases:
-      - modsec
-      - modlar
