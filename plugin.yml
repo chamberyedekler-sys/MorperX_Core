@@ -1,0 +1,6 @@
+name: MorperX_Core
+version: 1.0.0
+main: me.morperx.core.MorperXCore
+api-version: '26.1'
+author: MorperX
+description: MorperX sunucu temel sistemleri
