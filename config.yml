@@ -1,0 +1,48 @@
+# ==========================================================
+# MorperX Core
+# ==========================================================
+
+scoreboard:
+  enabled: true
+  title: "&6&lMORPERX"
+
+  lines:
+    - "&7&m----------------"
+    - "&fOyuncu: &e%player%"
+    - ""
+    - "&fSunucu: &aSurvival"
+    - "&fOnline: &e%online%&7/&e%max%"
+    - ""
+    - "&bdiscord.gg/morperx"
+    - "&7&m----------------"
+
+bossbar:
+  enabled: true
+
+  # Saniye
+  announcement-interval: 10
+
+  announcements:
+    - "&b&lMORPERX &7» &fdiscord.gg/morperx"
+    - "&b&lMORPERX &7» &ftiktok.gg/morperx"
+    - "&6&lMORPERX &7» &fSurvival sunucumuza hoşgeldin!"
+
+  join-message: "&a● &e%player% &fsunucuya katıldı!"
+  quit-message: "&c● &e%player% &fsunucudan ayrıldı!"
+
+tablist:
+  enabled: true
+
+  header:
+    - "&6&lMORPERX"
+    - "&7discord.gg/morperx"
+
+  footer:
+    - ""
+    - "&fOnline: &e%online%&7/&e%max%"
+    - "&7İyi oyunlar!"
+
+join-quit:
+  enabled: true
+  join: "&a+ &e%player% &7sunucuya katıldı."
+  quit: "&c- &e%player% &7sunucudan ayrıldı."
