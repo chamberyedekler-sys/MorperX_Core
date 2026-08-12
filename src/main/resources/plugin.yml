@@ -1,6 +1,14 @@
 name: MorperX_Core
-version: 1.0.0
+version: 1.1.0
 main: me.morperx.core.MorperXCore
 api-version: '26.1'
 author: MorperX
 description: MorperX sunucu temel sistemleri
+
+commands:
+  mod:
+    description: MorperX oyun modu seçme menüsünü açar.
+    usage: /mod
+    aliases:
+      - modsec
+      - modlar
