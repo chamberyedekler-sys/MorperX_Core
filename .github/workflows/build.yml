@@ -1,0 +1,36 @@
+name: Build MorperX Core
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+
+      - name: Build with Maven
+        run: mvn -B clean package
+
+      - name: Prepare artifact
+        run: |
+          mkdir -p artifact
+          cp target/MorperX_Core-1.0.0.jar artifact/
+
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: MorperX_Core
+          path: artifact/MorperX_Core-1.0.0.jar
