@@ -46,3 +46,54 @@ join-quit:
   enabled: true
   join: "&a+ &e%player% &7sunucuya katıldı."
   quit: "&c- &e%player% &7sunucudan ayrıldı."
+
+# ==========================================================
+# MORPERX MODE SELECTOR
+# ==========================================================
+
+mode-selector:
+  enabled: true
+
+  # 0-8 arası hotbar slotu
+  # 4 = ortadaki slot
+  slot: 4
+
+
+# ==========================================================
+# MORPERX LOCATIONS
+# ==========================================================
+
+locations:
+
+  lobby:
+    world: world
+
+    # Şimdilik örnek koordinatlar
+    x: 0.5
+    y: 100.0
+    z: 0.5
+
+    yaw: 0.0
+    pitch: 0.0
+
+  survival:
+    world: world
+
+    # Mevcut Survival başlangıç noktan
+    x: -712.5
+    y: 120.0
+    z: -189.5
+
+    yaw: 0.0
+    pitch: 0.0
+
+  skyblock:
+    world: world
+
+    # İlk Skyblock adasının merkezi
+    x: 0.5
+    y: 180.0
+    z: 0.5
+
+    yaw: 0.0
+    pitch: 0.0
