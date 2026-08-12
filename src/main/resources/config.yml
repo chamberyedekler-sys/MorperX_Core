@@ -1,99 +1,146 @@
-# ==========================================================
-# MorperX Core
-# ==========================================================
+# =========================================================
+# MORPERX CORE
+# =========================================================
 
 scoreboard:
+
   enabled: true
-  title: "&6&lMORPERX"
+
+  title: "&b&lMORPERX"
 
   lines:
-    - "&7&m----------------"
+
+    - "&8&m----------------"
     - "&fOyuncu: &e%player%"
     - ""
-    - "&fSunucu: &aSurvival"
-    - "&fOnline: &e%online%&7/&e%max%"
+    - "&fSunucu: &b%mode%"
+    - "&fOnline: &a%online%&7/&f%max%"
     - ""
     - "&bdiscord.gg/morperx"
-    - "&7&m----------------"
+    - "&8&m----------------"
+
+
+# =========================================================
+# BOSSBAR
+# =========================================================
 
 bossbar:
+
   enabled: true
 
-  # Saniye
   announcement-interval: 10
 
   announcements:
+
     - "&b&lMORPERX &7» &fdiscord.gg/morperx"
-    - "&b&lMORPERX &7» &ftiktok.gg/morperx"
-    - "&6&lMORPERX &7» &fSurvival sunucumuza hoşgeldin!"
+    - "&d&lMORPERX &7» &ftiktok.gg/morperx"
+    - "&a&lMORPERX &7» &fİyi eğlenceler!"
+    - "&e&lMORPERX &7» &fSunucumuza hoş geldin!"
 
   join-message: "&a● &e%player% &fsunucuya katıldı!"
+
   quit-message: "&c● &e%player% &fsunucudan ayrıldı!"
 
+
+# =========================================================
+# JOIN / QUIT
+# =========================================================
+
+join-quit:
+
+  enabled: true
+
+  join: "&a+ &e%player% &7sunucuya katıldı."
+
+  quit: "&c- &e%player% &7sunucudan ayrıldı."
+
+
+# =========================================================
+# TABLIST
+# =========================================================
+
 tablist:
+
   enabled: true
 
   header:
-    - "&6&lMORPERX"
+
+    - ""
+    - "&b&lMORPERX"
     - "&7discord.gg/morperx"
+    - ""
 
   footer:
+
     - ""
-    - "&fOnline: &e%online%&7/&e%max%"
-    - "&7İyi oyunlar!"
-
-join-quit:
-  enabled: true
-  join: "&a+ &e%player% &7sunucuya katıldı."
-  quit: "&c- &e%player% &7sunucudan ayrıldı."
-
-# ==========================================================
-# MORPERX MODE SELECTOR
-# ==========================================================
-
-mode-selector:
-  enabled: true
-
-  # 0-8 arası hotbar slotu
-  # 4 = ortadaki slot
-  slot: 4
+    - "&fSunucu: &b%mode%"
+    - "&fOyuncular: &a%online%&7/&f%max%"
+    - ""
 
 
-# ==========================================================
-# MORPERX LOCATIONS
-# ==========================================================
+# =========================================================
+# LOCATIONS
+# =========================================================
 
 locations:
 
+  # -------------------------------------------------------
+  # LOBBY
+  # -------------------------------------------------------
+
   lobby:
-    world: world
 
-    # Şimdilik örnek koordinatlar
-    x: 0.5
-    y: 100.0
-    z: 0.5
+    world: "world"
 
-    yaw: 0.0
-    pitch: 0.0
+    # Oyuncu platformun üzerinde doğacak.
+    x: 0
+
+    y: 101
+
+    z: 0
+
+    yaw: 0
+
+    pitch: 0
+
+
+  # -------------------------------------------------------
+  # SURVIVAL
+  # -------------------------------------------------------
 
   survival:
-    world: world
 
-    # Mevcut Survival başlangıç noktan
-    x: -712.5
-    y: 120.0
-    z: -189.5
+    world: "world"
 
-    yaw: 0.0
-    pitch: 0.0
+    # Lobby'den uzakta ayrı alan.
+    x: 300
+
+    y: 101
+
+    z: 0
+
+    yaw: 0
+
+    pitch: 0
+
+
+  # -------------------------------------------------------
+  # SKYBLOCK
+  # -------------------------------------------------------
 
   skyblock:
-    world: world
 
-    # İlk Skyblock adasının merkezi
-    x: 0.5
-    y: 180.0
-    z: 0.5
+    world: "world"
 
-    yaw: 0.0
-    pitch: 0.0
+    # Adanın merkezi 0,180,0.
+    # Oyuncu ağacın içine doğmasın diye
+    # adanın kenarına gönderilecek.
+    x: 5
+
+    y: 181
+
+    z: 5
+
+    yaw: 225
+
+    pitch: 0
